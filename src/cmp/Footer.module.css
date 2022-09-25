@@ -1,0 +1,17 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.context {
+  background-color: red;
+  color: white;
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  top: 120%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
