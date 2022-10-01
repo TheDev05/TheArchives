@@ -1,28 +1,21 @@
 import React from "react";
 import style from "../cmp/Modal.module.css";
 import image1 from "../assests/image.png";
-import about from "../cmp/ClintAbout";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import ClintAbout from "../cmp/ClintAbout";
-import ClintStatus from "../cmp/ClintStatus";
-import ClintRelation from "../cmp/ClintRelation";
-import ClintSkills from "../cmp/ClintSkills";
-import ClintWeapons from "../cmp/ClintWeapons";
-import ClintTroops from "../cmp/ClintTroops";
+import { useLocation } from "react-router-dom";
+import array from "./BodyContent";
+import Template from "../cmp/Template";
 
-const Modal = () => {
+const Modal = (props) => {
   let [value, updateValue] = useState(0);
+  const data = array;
 
-  const data = [
-    <ClintAbout />,
-    <ClintStatus />,
-    <ClintRelation />,
-    <ClintSkills />,
-    <ClintWeapons />,
-    <ClintTroops />,
-  ];
+  const location = useLocation();
+  const param1 = location.state.pass;
+
+  // console.log("param1: ", param1);
 
   const [dash, updateDash] = useState([
     "2px solid black",
@@ -87,11 +80,13 @@ const Modal = () => {
           </div>
         </div> */}
 
-        {data.map((val, index) => {
+        {/* {data.map((val, index) => {
           if (index == value) {
             return val;
           }
-        })}
+        })} */}
+
+        <Template pass={[value, param1]} />
 
         {/* Image */}
         <div className={style.image}>
