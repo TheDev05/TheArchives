@@ -15,9 +15,7 @@ const ClintWeapons = () => {
         coordination allow him to easily master most weapons. He also received
         training in swordsmanship during his youth from the original Swordsman,
         who was considered one of the greatest experts in sword-fighting the
-        world has ever known. Barton is skilled with swords, knives, nunchakus,
-        staffs, and is one of the few people to be able to properly handle
-        Captain America's shield
+        world has ever known.
       </div>
     </div>
   );

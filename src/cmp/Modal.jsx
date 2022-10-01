@@ -3,6 +3,7 @@ import style from "../cmp/Modal.module.css";
 import image1 from "../assests/image.png";
 import about from "../cmp/ClintAbout";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import ClintAbout from "../cmp/ClintAbout";
 import ClintStatus from "../cmp/ClintStatus";
@@ -47,7 +48,10 @@ const Modal = () => {
     <div className={style.body}>
       <div className={style.context}>
         <div className={style.head}>
-          <div className={style.home}><a href="#">Home</a></div>
+          <div className={style.home}>
+            <Link to={"/Home"}>Home</Link>
+            {/* <a href="#">Home</a> */}
+            </div>
           <div className={style.char}><a href="#">Characters</a></div>
           <div className={style.help}><a href="#">Help</a></div>
         </div>

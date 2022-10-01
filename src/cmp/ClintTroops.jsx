@@ -6,7 +6,7 @@ const ClintTroops = () => {
     <div className={style.leftBox}>
       <div className={style.title}>
         {/* <p>Hawkeye aka.</p> */}
-        <h2>The Avengers</h2>
+        <h2>The <span className={style.sirname}>Avengers</span></h2>
       </div>
       <div className={style.detail}>
         Although Hawkeye became romantically involved with the Black Widow, he

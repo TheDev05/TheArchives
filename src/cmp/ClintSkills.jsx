@@ -6,7 +6,7 @@ const ClintSkills = () => {
     <div className={style.leftBox}>
       <div className={style.title}>
         {/* <p>Skills'</p> */}
-        <h2>Master Archer</h2>
+        <h2>Master <span className={style.sirname}>Archer</span></h2>
       </div>
       <div className={style.detail}>
         Barton has trained himself to become a master archer

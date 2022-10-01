@@ -5,8 +5,10 @@ const ClintAbout = () => {
   return (
     <div className={style.leftBox}>
       <div className={style.title}>
-        <p>Hawkeye aka.</p>
-        <h2>Clint Barton</h2>
+        <p><i>Hawkeye aka.</i></p>
+        <h2>
+          Clint <span className={style.sirname}>Barton</span>
+        </h2>
       </div>
       <div className={style.detail}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus facilis
