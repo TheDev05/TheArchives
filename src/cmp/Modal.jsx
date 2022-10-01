@@ -44,16 +44,32 @@ const Modal = () => {
     );
   };
 
+  let [dot, updateDot] = useState("In");
+  const clickCancel = (e) => {
+    // console.log("first");
+    // updateDot("Out");
+  };
+
   return (
-    <div className={style.body}>
-      <div className={style.context}>
+    <div className={`${style.body}`}>
+      <div
+        className={`${
+          style.context
+        } ${`animate__animated animate__zoom${dot}`}`}
+      >
         <div className={style.head}>
           <div className={style.home}>
             <Link to={"/Home"}>Home</Link>
             {/* <a href="#">Home</a> */}
-            </div>
-          <div className={style.char}><a href="#">Characters</a></div>
-          <div className={style.help}><a href="#">Help</a></div>
+          </div>
+          <div className={style.char}>
+            <a href="#">Characters</a>
+          </div>
+          <div className={style.help}>
+            <a href="#" onClick={clickCancel}>
+              Help
+            </a>
+          </div>
         </div>
 
         {/* <div className={style.leftBox}>

@@ -52,7 +52,7 @@
 .image {
   /* background-color: black; */
   position: absolute;
-  top: 8px;
+  top: -67px;
   left: 50%;
 }
 
@@ -99,8 +99,8 @@ img {
   justify-content: center;
   align-items: flex-end;
   position: absolute;
-  left: 76%;
-  top: 25%;
+  left: 82.5%;
+  top: 17%;
   width: 200px;
   height: 400px;
 }
