@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import style from "../cmp/Main.module.css";
 
-import image1 from "../assests/profile.jpg";
-import image2 from "../assests/1.jpg";
-import image3 from "../assests/3.jpg";
+import image1 from "../assests/Barton.jpg";
+import image2 from "../assests/Captain.jpg";
+import image3 from "../assests/Widow.jpg";
 
 import Nav from "../cmp/Nav";
 import Footer from "../cmp/Footer";

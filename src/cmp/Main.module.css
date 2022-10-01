@@ -42,10 +42,15 @@ button {
 
 .image {
   width: 300px;
-  height: 400px;
+  height: 440px;
   margin-left: 20px;
-  /* filter: blur(2.5px); */
+  filter: blur(2.5px);
   cursor: pointer;
+}
+
+.image:hover {
+  transform: scale(105%);
+  filter: blur(0px);
 }
 /* 
 .CenterImage {
