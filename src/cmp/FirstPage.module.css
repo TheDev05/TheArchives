@@ -52,7 +52,7 @@
   width: 250px;
   height: 200px;
   z-index: 0;
-  color: white;
+  color: transparent;
   font-family: "Times New Roman", Times, serif;
   font-size: 200px;
   -webkit-text-stroke: 2px red;
