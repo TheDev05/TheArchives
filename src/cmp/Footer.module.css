@@ -5,12 +5,14 @@
 }
 
 .context {
-  background-color: red;
+  background-color: black;
   color: white;
   height: 150px;
   width: 100%;
-  position: absolute;
-  top: 120%;
+  position: relative;
+  z-index: 500;
+  top: 130%;
+  top: 700px;
   display: flex;
   justify-content: center;
   align-items: center;

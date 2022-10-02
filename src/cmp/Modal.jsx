@@ -52,7 +52,7 @@ const Modal = (props) => {
       >
         <div className={style.head}>
           <div className={style.home}>
-            <Link to={"/Home"}>Home</Link>
+            <Link to={"/"}>Home</Link>
             {/* <a href="#">Home</a> */}
           </div>
           <div className={style.char}>

@@ -1,0 +1,208 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.context {
+  background-color: white;
+  color: white;
+  height: 100vh;
+  width: 100%;
+}
+
+.head {
+  /* background-color: white; */
+  color: black;
+  width: 100%;
+  height: 90px;
+  position: absolute;
+  z-index: 10;
+}
+
+.head p {
+  font-size: 50px;
+  text-transform: uppercase;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 600;
+  line-height: 90px;
+  margin-left: 50px;
+  /* -webkit-text-stroke: 1px white; */
+  color: black;
+}
+
+.part {
+  top: 100px;
+  position: absolute;
+  /* background-color: black; */
+  color: black;
+  width: 950px;
+  height: 700px;
+}
+
+.part p {
+  font-size: 20px;
+  text-align: justify;
+  padding: 50px;
+}
+
+.number {
+  position: absolute;
+  /* background-color: black; */
+  width: 250px;
+  height: 200px;
+  z-index: 0;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 200px;
+  -webkit-text-stroke: 2px red;
+  left: 740px;
+  top: 420px;
+}
+
+.count1 {
+  font-size: 20px;
+  color: black;
+  -webkit-text-stroke: 0px black;
+  position: relative;
+  right: 5px;
+  font-weight: 600;
+}
+
+.right {
+  background-color: white;
+  color: black;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: -15%;
+  padding: 20px;
+  transform: skew(8deg);
+  /* filter: blur(1px); */
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.col1 {
+  /* background-color: green; */
+  width: 37%;
+  position: absolute;
+  right: 60%;
+  height: 100vh;
+}
+
+.col2 {
+  /* background-color: pink; */
+  width: 37%;
+  position: absolute;
+  right: 22%;
+  height: 100vh;
+}
+
+.card {
+  width: 280px;
+  padding: 10px;
+  height: 410px;
+
+  border: 2px solid rgb(0%, 0%, 0%, 0.3);
+  box-shadow: 0px 5px 10px 2px grey;
+
+  background-color: white;
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  color: black;
+}
+
+.top {
+  background-color: white;
+  width: 100%;
+  height: 35px;
+  position: relative;
+  top: 0px;
+  display: flex;
+  flex-direction: row;
+  color: black;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.profile {
+  position: relative;
+  top: -3px;
+  font-size: 30px;
+}
+
+.profile h3 {
+  color: black;
+  z-index: 9;
+  top: 2px;
+  left: 35px;
+  position: absolute;
+  font-size: 20px;
+}
+
+.card img {
+  background-color: white;
+  position: relative;
+  top: 10px;
+  left: 4px;
+  width: 250px;
+  height: 280px;
+
+  /* filter: grayscale(); */
+}
+
+.bottom {
+  /* background-color: black; */
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-direction: column;
+  font-size: 25px;
+  margin-top: 15px;
+}
+
+.upper {
+  width: 100%;
+  /* background-color: black; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.like {
+  width: 100px;
+  color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.heart {
+  margin-left: 14px;
+  color: red;
+}
+
+.save {
+  position: relative;
+  right: 0px;
+  color: black;
+}
+
+.text {
+  color: black;
+  font-size: 11px;
+  position: relative;
+  left: 10px;
+}
+
+.hash {
+  position: relative;
+  left: 79px;
+  font-weight: 800;
+}

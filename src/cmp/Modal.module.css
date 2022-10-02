@@ -53,7 +53,9 @@
   /* background-color: black; */
   position: absolute;
   top: -67px;
-  left: 50%;
+  left: 48%;
+  width: 360px;
+  height: 840px;
 }
 
 img {

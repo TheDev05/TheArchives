@@ -8,19 +8,19 @@ const TitleContent = [
     "The Avengers",
   ],
   [
-    "Steve Rogers",
-    "Alive",
-    "Married",
-    "Super Soldier",
-    "Sheild",
-    "The Avengers",
-  ],
-  [
     "Natasha Romanoff",
     "Alive",
     "Single",
     "Martial Artist",
     "Dual Batons",
+    "The Avengers",
+  ],
+  [
+    "Bruce Banner",
+    "Alive",
+    "Single",
+    "Super Power",
+    "Super Punch",
     "The Avengers",
   ],
 ];

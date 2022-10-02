@@ -10,6 +10,7 @@ import Footer from "../cmp/Footer";
 import { Link } from "react-router-dom";
 
 const Main = () => {
+  
   const [val, updateVal] = useState();
   const click = (e) => {
     updateVal(e.currentTarget.id);
@@ -25,24 +26,84 @@ const Main = () => {
       <Nav />
       <div className={style.context}>
         <div className={style.container}>
-          <div className={style.card}>
+          <div className={style.cover}>
+
             <Link to={"/Barton"} state={{ pass: 0 }}>
-              <div className="style.image" id="1" onClick={click}>
+              <div className={style.card} id="1" onClick={click}>
+
+                <div className={style.head}>
+                  <div className={style.left}>
+                    <div className={style.profile}>😊</div>
+                    <div className={style.name}>Clint B.</div>
+                  </div>
+
+                  <div className={style.right}>
+                    <div className={style.follow}>Follow</div>
+                  </div>
+                </div>
+
+                <div className={style.imageSection}>
+                  <img src={image1} alt="" />
+                </div>
+              </div>
+              
+            </Link>
+
+            <Link to={"/Barton"} state={{ pass: 1 }}>
+              <div className={style.card} id="2" onClick={click}>
+                <div className={style.head}>
+                  <div className={style.left}>
+                    <div className={style.profile}>😊</div>
+                    <div className={style.name}>Steve R.</div>
+                  </div>
+
+                  <div className={style.right}>
+                    <div className={style.follow}>Follow</div>
+                  </div>
+                </div>
+
+                <div className={style.imageSection}>
+                  <img src={image2} alt="" />
+                </div>
+              </div>
+            </Link>
+
+            <Link to={"/Barton"} state={{ pass: 2 }}>
+              <div className={style.card} id="3" onClick={click}>
+                <div className={style.head}>
+                  <div className={style.left}>
+                    <div className={style.profile}>😊</div>
+                    <div className={style.name}>Natasha R.</div>
+                  </div>
+
+                  <div className={style.right}>
+                    <div className={style.follow}>Follow</div>
+                  </div>
+                </div>
+
+                <div className={style.imageSection}>
+                  <img src={image3} alt="" />
+                </div>
+              </div>
+            </Link>
+
+            {/* <Link to={"/Barton"} state={{ pass: 0 }}>
+              <div className={style.card} id="1" onClick={click}>
                 <img className={`${style.image}`} src={image1} alt="" />
               </div>
             </Link>
 
             <Link to={"/Barton"} state={{ pass: 1 }}>
-              <div className="style.image" id="2" onClick={click}>
+              <div className={style.card} id="2" onClick={click}>
                 <img className={`${style.image}`} src={image2} alt="" />
               </div>
             </Link>
 
-            <Link to={"/Barton"} state={{ pass:  2  }}>
-              <div className="style.image" id="3" onClick={click}>
+            <Link to={"/Barton"} state={{ pass: 2 }}>
+              <div className={style.card} id="3" onClick={click}>
                 <img className={`${style.image}`} src={image3} alt="" />
               </div>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </div>
