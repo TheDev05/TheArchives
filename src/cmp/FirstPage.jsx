@@ -8,7 +8,6 @@ import image4 from "../assests/Hulk.jpg";
 import image5 from "../assests/Captain.jpg";
 import image6 from "../assests/Natasha.jpg";
 
-// import Marquee from "react-fast-marquee";
 import Marquee from "react-marquee-master";
 
 // import { HiDotsHorizontal } from "react-icons/hi";
