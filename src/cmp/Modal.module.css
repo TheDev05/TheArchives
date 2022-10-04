@@ -51,11 +51,11 @@
 
 .image {
   /* background-color: black; */
-  position: absolute;
-  top: -67px;
-  left: 48%;
-  width: 360px;
-  height: 840px;
+  position: fixed;
+  /* top: -80px; */
+  /* left: 48%; */
+  /* width: 460px; */
+  /* height: 880px; */
 }
 
 img {

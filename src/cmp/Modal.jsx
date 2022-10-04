@@ -8,13 +8,29 @@ import { useLocation } from "react-router-dom";
 import array from "./BodyContent";
 import Template from "../cmp/Template";
 
+import ModalProfiles from "./ModalProfiles";
+
 const Modal = (props) => {
   let [value, updateValue] = useState(0);
+  // const [ok, updateOk] = useState(1);
+
   const data = array;
 
   const location = useLocation();
   const param1 = location.state.pass;
 
+  const photo = {
+    // backgroundColor: "black",
+    position: "fixed",
+    top: ModalProfiles[param1].top,
+    bottom: ModalProfiles[param1].bottom,
+    left: ModalProfiles[param1].left,
+    right: ModalProfiles[param1].right,
+    width: ModalProfiles[param1].width,
+    height: ModalProfiles[param1].height,
+  };
+
+  
   // console.log("param1: ", param1);
 
   const [dash, updateDash] = useState([
@@ -89,9 +105,10 @@ const Modal = (props) => {
         <Template pass={[value, param1]} />
 
         {/* Image */}
-        <div className={style.image}>
-          <img src={image1} alt="" />
-        </div>
+          <div className={style.image}>
+            <img src={ModalProfiles[param1].url} style={photo} alt="" />
+          </div>
+      
 
         <div className={style.right}>
           <div

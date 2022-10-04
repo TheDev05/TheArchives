@@ -7,7 +7,7 @@
 .context {
   background-color: white;
   color: white;
-  height: 100vh;
+  height: 120vh;
   width: 100%;
 }
 
@@ -46,6 +46,57 @@
   padding: 50px;
 }
 
+.sign {
+  width: 70%;
+  height: 50%;
+  position: relative;
+  left: 60%;
+  bottom: 19%;
+  background-color: transparent;
+}
+
+.social {
+  /* background-color: red; */
+  color: red;
+  width: 400px;
+  position: absolute;
+  height: 200px;
+  z-index: 101;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  top: 78%;
+  left: -8.4%;
+}
+
+.fb,
+.twitter,
+.git {
+  margin: 5px;
+  cursor: pointer;
+}
+
+.fb:hover,
+.twitter:hover,
+.git:hover {
+  color: black;
+}
+
+.fb {
+  font-size: 40px;
+}
+
+.git {
+  font-size: 40px;
+}
+
+.twitter {
+  position: relative;
+  top: 1px;
+  font-size: 47px;
+}
+
 .number {
   position: absolute;
   /* background-color: black; */
@@ -72,8 +123,10 @@
 .right {
   background-color: white;
   color: black;
+  /* background-color: black; */
   width: 50%;
   height: 100%;
+  top: -120px;
   position: absolute;
   right: -15%;
   padding: 20px;

@@ -16,7 +16,7 @@
 .context {
   background-color: red;
   width: 100%;
-  top: 50%;
+  top: 44%;
   position: relative;
   height: 200%;
   z-index: 100;
@@ -26,11 +26,11 @@
 
 .right {
   /* background-color: green; */
-  height: 80%;
+  height: 50%;
   top: 8%;
-  width: 85%;
+  width: 100%;
   position: relative;
-  left: 13%;
+  left: 0%;
 }
 
 .right p {
@@ -40,6 +40,7 @@
   margin-bottom: 20px;
   text-align: justify;
   width: 88%;
+  margin-left: 6%;
 }
 
 .right h2 {
@@ -52,7 +53,7 @@
   width: 28.5%;
   margin-left: 10px;
   height: 45%;
-  /* margin: 10px; */
+  /* margin: 10px; */ 
   display: inline-block;
   cursor: pointer;
 
