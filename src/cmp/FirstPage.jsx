@@ -17,7 +17,7 @@ import Marquee from "react-marquee-master";
 // import { FiSend } from "react-icons/fi";
 // import { FiBookmark } from "react-icons/fi";
 
-import { SuitHeartFill } from 'react-bootstrap-icons';
+// import { SuitHeartFill } from 'react-bootstrap-icons';
 
 import SecondPage from "../cmp/SecondPage";
 
@@ -83,7 +83,7 @@ const FirstPage = () => {
                     <div className={style.upper}>
                       <div className={style.like}>
                         <div className={style.heart}>
-                        <SuitHeartFill/>
+                        {/* <SuitHeartFill/> */}
                         </div>
                         {/* <TbMessageCircle2 /> */}
                         <send />
