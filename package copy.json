@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@coreui/react": "^4.4.0",
+    "animate.css": "^4.1.1"
+  }
+}
