@@ -11,12 +11,12 @@ import image6 from "../assests/Natasha.jpg";
 // import Marquee from "react-fast-marquee";
 import Marquee from "react-marquee-master";
 
-import { HiDotsHorizontal } from "react-icons/hi";
-import { CgProfile } from "react-icons/cg";
-import { FaHeart } from "react-icons/fa";
-import { TbMessageCircle2 } from "react-icons/tb";
-import { FiSend } from "react-icons/fi";
-import { FiBookmark } from "react-icons/fi";
+// import { HiDotsHorizontal } from "react-icons/hi";
+// import { CgProfile } from "react-icons/cg";
+// import { FaHeart } from "react-icons/fa";
+// import { TbMessageCircle2 } from "react-icons/tb";
+// import { FiSend } from "react-icons/fi";
+// import { FiBookmark } from "react-icons/fi";
 
 import SecondPage from "../cmp/SecondPage";
 
@@ -69,11 +69,11 @@ const FirstPage = () => {
                 <div className={style.card}>
                   <div className={style.top}>
                     <div className={style.profile}>
-                      <CgProfile />
+                      {/* <CgProfile /> */}
                       <h3>Barton</h3>
                     </div>
                     <div className={style.add}>
-                      <HiDotsHorizontal />
+                      {/* <HiDotsHorizontal /> */}
                     </div>
                   </div>
                   <img src={image1} alt="" />
@@ -82,13 +82,13 @@ const FirstPage = () => {
                     <div className={style.upper}>
                       <div className={style.like}>
                         <div className={style.heart}>
-                          <FaHeart />
+                          {/* <FaHeart /> */}
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
+                        {/* <TbMessageCircle2 /> */}
+                        {/* <FiSend /> */}
                       </div>
                       <div className={style.save}>
-                        <FiBookmark />
+                        {/* <FiBookmark /> */}
                       </div>
                     </div>
 
@@ -101,11 +101,11 @@ const FirstPage = () => {
                 <div className={style.card}>
                   <div className={style.top}>
                     <div className={style.profile}>
-                      <CgProfile />
+                      {/* <CgProfile /> */}
                       <h3>Natasha</h3>
                     </div>
                     <div className={style.add}>
-                      <HiDotsHorizontal />
+                      {/* <HiDotsHorizontal /> */}
                     </div>
                   </div>
                   <img src={image2} alt="" />
@@ -114,13 +114,13 @@ const FirstPage = () => {
                     <div className={style.upper}>
                       <div className={style.like}>
                         <div className={style.heart}>
-                          <FaHeart />
+                          {/* <FaHeart /> */}
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
+                        {/* <TbMessageCircle2 /> */}
+                        {/* <FiSend /> */}
                       </div>
                       <div className={style.save}>
-                        <FiBookmark />
+                        {/* <FiBookmark /> */}
                       </div>
                     </div>
 
@@ -133,11 +133,11 @@ const FirstPage = () => {
                 <div className={style.card}>
                   <div className={style.top}>
                     <div className={style.profile}>
-                      <CgProfile />
+                      {/* <CgProfile /> */}
                       <h3>Thor</h3>
                     </div>
                     <div className={style.add}>
-                      <HiDotsHorizontal />
+                      {/* <HiDotsHorizontal /> */}
                     </div>
                   </div>
                   <img src={image3} alt="" />
@@ -146,13 +146,13 @@ const FirstPage = () => {
                     <div className={style.upper}>
                       <div className={style.like}>
                         <div className={style.heart}>
-                          <FaHeart />
+                          {/* <FaHeart /> */}
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
+                        {/* <TbMessageCircle2 /> */}
+                        {/* <FiSend /> */}
                       </div>
                       <div className={style.save}>
-                        <FiBookmark />
+                        {/* <FiBookmark /> */}
                       </div>
                     </div>
 
@@ -175,11 +175,11 @@ const FirstPage = () => {
                 <div className={style.card}>
                   <div className={style.top}>
                     <div className={style.profile}>
-                      <CgProfile />
+                      {/* <CgProfile /> */}
                       <h3>Bruce</h3>
                     </div>
                     <div className={style.add}>
-                      <HiDotsHorizontal />
+                      {/* <HiDotsHorizontal /> */}
                     </div>
                   </div>
                   <img src={image4} alt="" />
@@ -188,13 +188,13 @@ const FirstPage = () => {
                     <div className={style.upper}>
                       <div className={style.like}>
                         <div className={style.heart}>
-                          <FaHeart />
+                          {/* <FaHeart /> */}
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
+                        {/* <TbMessageCircle2 /> */}
+                        {/* <FiSend /> */}
                       </div>
                       <div className={style.save}>
-                        <FiBookmark />
+                        {/* <FiBookmark /> */}
                       </div>
                     </div>
 
@@ -207,11 +207,11 @@ const FirstPage = () => {
                 <div className={style.card}>
                   <div className={style.top}>
                     <div className={style.profile}>
-                      <CgProfile />
+                      {/* <CgProfile /> */}
                       <h3>Steve</h3>
                     </div>
                     <div className={style.add}>
-                      <HiDotsHorizontal />
+                      {/* <HiDotsHorizontal /> */}
                     </div>
                   </div>
                   <img src={image5} alt="" />
@@ -220,13 +220,13 @@ const FirstPage = () => {
                     <div className={style.upper}>
                       <div className={style.like}>
                         <div className={style.heart}>
-                          <FaHeart />
+                          {/* <FaHeart /> */}
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
+                        {/* <TbMessageCircle2 /> */}
+                        {/* <FiSend /> */}
                       </div>
                       <div className={style.save}>
-                        <FiBookmark />
+                        {/* <FiBookmark /> */}
                       </div>
                     </div>
 
@@ -239,11 +239,11 @@ const FirstPage = () => {
                 <div className={style.card}>
                   <div className={style.top}>
                     <div className={style.profile}>
-                      <CgProfile />
+                      {/* <CgProfile /> */}
                       <h3>Tony</h3>
                     </div>
                     <div className={style.add}>
-                      <HiDotsHorizontal />
+                      {/* <HiDotsHorizontal /> */}
                     </div>
                   </div>
                   <img src={image6} alt="" />
@@ -252,13 +252,13 @@ const FirstPage = () => {
                     <div className={style.upper}>
                       <div className={style.like}>
                         <div className={style.heart}>
-                          <FaHeart />
+                          {/* <FaHeart /> */}
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
+                        {/* <TbMessageCircle2 /> */}
+                        {/* <FiSend /> */}
                       </div>
                       <div className={style.save}>
-                        <FiBookmark />
+                        {/* <FiBookmark /> */}
                       </div>
                     </div>
 
