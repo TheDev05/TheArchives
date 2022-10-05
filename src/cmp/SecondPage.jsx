@@ -1,21 +1,10 @@
 import React from "react";
 import style from "../cmp/SecondPage.module.css";
 
-import image1 from "../assests/Barton.jpg";
-import image2 from "../assests/Natasha.jpg";
 import image3 from "../assests/Hulk.jpg";
-
-import { Link } from "react-router-dom";
-import { useState } from "react";
-
 import Footer from "../cmp/Footer";
 
 const SecondPage = () => {
-  const [val, updateVal] = useState();
-  const click = (e) => {
-    updateVal(e.currentTarget.id);
-  };
-
   return (
     <>
       <div className={style.body}>
@@ -66,23 +55,6 @@ const SecondPage = () => {
               voluptate dolorum eligendi vitae corporis consequuntur qui vel
               quaerat suscipit inventore eius dolor culpa commodi?
             </p>
-
-            {/* <div className={style.section}> */}
-            <Link to={"/Barton"} state={{ pass: 0 }}>
-              <div className={style.card} id="1" onClick={click}>
-                <img src={image1} alt="" />
-              </div>
-            </Link>
-            <Link to={"/Barton"} state={{ pass: 1 }}>
-              <div className={style.card} id="2" onClick={click}>
-                <img src={image2} alt="" />
-              </div>
-            </Link>
-            <Link to={"/Barton"} state={{ pass: 2 }}>
-              <div className={style.card} id="3" onClick={click}>
-                <img src={image3} alt="" />
-              </div>
-            </Link>
           </div>
         </div>
       </div>

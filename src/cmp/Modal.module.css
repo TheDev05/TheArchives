@@ -35,6 +35,10 @@
   align-items: center;
 }
 
+a{
+  text-decoration: none;
+}
+
 .home,
 .char,
 .help {

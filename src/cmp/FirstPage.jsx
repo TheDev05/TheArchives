@@ -24,6 +24,8 @@ import { BsGithub } from "react-icons/bs";
 import { AiFillTwitterCircle } from "react-icons/ai";
 
 import SecondPage from "../cmp/SecondPage";
+import { Link } from "react-router-dom";
+import { useState } from "react";
 
 const FirstPage = () => {
   return (
@@ -83,134 +85,142 @@ const FirstPage = () => {
               delay="12"
               height={1100}
               marqueeItems={[
-                <div className={style.card}>
-                  <div className={style.top}>
-                    <div className={style.profile}>
-                      <CgProfile />
-                      <h3>Barton</h3>
+                <Link to={"/Characters"} state={{ pass: 0 }}>
+                  <div className={style.card} id="1">
+                    <div className={style.top}>
+                      <div className={style.profile}>
+                        <CgProfile />
+                        <h3>Barton</h3>
+                      </div>
+                      <div className={style.add}>
+                        <HiDotsHorizontal />
+                      </div>
                     </div>
-                    <div className={style.add}>
-                      <HiDotsHorizontal />
-                    </div>
-                  </div>
-                  <img src={image1} alt="" />
+                    <img src={image1} alt="" />
 
-                  <div className={style.bottom}>
-                    <div className={style.upper}>
-                      <div className={style.like}>
-                        <div className={style.heart}>
-                          <FaHeart />
+                    <div className={style.bottom}>
+                      <div className={style.upper}>
+                        <div className={style.like}>
+                          <div className={style.heart}>
+                            <FaHeart />
+                          </div>
+                          <TbMessageCircle2 />
+                          <FiSend />
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
-                      </div>
-                      <div className={style.save}>
-                        <FiBookmark />
-                      </div>
-                    </div>
-
-                    <div className={style.text}>
-                      Liked by Dev and 55 others{" "}
-                      <span className={style.hash}> #Barton</span>
-                    </div>
-                  </div>
-                </div>,
-                <div className={style.card}>
-                  <div className={style.top}>
-                    <div className={style.profile}>
-                      <CgProfile />
-                      <h3>Natasha</h3>
-                    </div>
-                    <div className={style.add}>
-                      <HiDotsHorizontal />
-                    </div>
-                  </div>
-                  <img src={image2} alt="" />
-
-                  <div className={style.bottom}>
-                    <div className={style.upper}>
-                      <div className={style.like}>
-                        <div className={style.heart}>
-                          <FaHeart />
+                        <div className={style.save}>
+                          <FiBookmark />
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
                       </div>
-                      <div className={style.save}>
-                        <FiBookmark />
-                      </div>
-                    </div>
 
-                    <div className={style.text}>
-                      Liked by Ashish and 29 others{" "}
-                      <span className={style.hash}>#Nat</span>
+                      <div className={style.text}>
+                        Liked by Dev and 55 others{" "}
+                        <span className={style.hash}> #Barton</span>
+                      </div>
                     </div>
                   </div>
-                </div>,
-                <div className={style.card}>
-                  <div className={style.top}>
-                    <div className={style.profile}>
-                      <CgProfile />
-                      <h3>Nick</h3>
+                </Link>,
+                <Link to={"/Characters"} state={{ pass: 1 }}>
+                  <div className={style.card} id="2">
+                    <div className={style.top}>
+                      <div className={style.profile}>
+                        <CgProfile />
+                        <h3>Natasha</h3>
+                      </div>
+                      <div className={style.add}>
+                        <HiDotsHorizontal />
+                      </div>
                     </div>
-                    <div className={style.add}>
-                      <HiDotsHorizontal />
-                    </div>
-                  </div>
-                  <img src={image9} alt="" />
+                    <img src={image2} alt="" />
 
-                  <div className={style.bottom}>
-                    <div className={style.upper}>
-                      <div className={style.like}>
-                        <div className={style.heart}>
-                          <FaHeart />
+                    <div className={style.bottom}>
+                      <div className={style.upper}>
+                        <div className={style.like}>
+                          <div className={style.heart}>
+                            <FaHeart />
+                          </div>
+                          <TbMessageCircle2 />
+                          <FiSend />
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
-                      </div>
-                      <div className={style.save}>
-                        <FiBookmark />
-                      </div>
-                    </div>
-
-                    <div className={style.text}>
-                      Liked by Yash and 98 others{" "}
-                      <span className={style.hash}> #Nick</span>
-                    </div>
-                  </div>
-                </div>,
-
-                <div className={style.card}>
-                  <div className={style.top}>
-                    <div className={style.profile}>
-                      <CgProfile />
-                      <h3>Thor</h3>
-                    </div>
-                    <div className={style.add}>
-                      <HiDotsHorizontal />
-                    </div>
-                  </div>
-                  <img src={image8} alt="" />
-
-                  <div className={style.bottom}>
-                    <div className={style.upper}>
-                      <div className={style.like}>
-                        <div className={style.heart}>
-                          <FaHeart />
+                        <div className={style.save}>
+                          <FiBookmark />
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
                       </div>
-                      <div className={style.save}>
-                        <FiBookmark />
+
+                      <div className={style.text}>
+                        Liked by Ashish and 29 others{" "}
+                        <span className={style.hash}>#Nat</span>
                       </div>
-                    </div>
-                    <div className={style.text}>
-                      Liked by Dev and 98 others{" "}
-                      <span className={style.hash}> #Thor</span>
                     </div>
                   </div>
-                </div>,
+                </Link>,
+                <Link to={"/Characters"} state={{ pass: 2 }}>
+                  <div className={style.card} id="3">
+                    <div className={style.top}>
+                      <div className={style.profile}>
+                        <CgProfile />
+                        <h3>Nick</h3>
+                      </div>
+                      <div className={style.add}>
+                        <HiDotsHorizontal />
+                      </div>
+                    </div>
+                    <img src={image9} alt="" />
+
+                    <div className={style.bottom}>
+                      <div className={style.upper}>
+                        <div className={style.like}>
+                          <div className={style.heart}>
+                            <FaHeart />
+                          </div>
+                          <TbMessageCircle2 />
+                          <FiSend />
+                        </div>
+                        <div className={style.save}>
+                          <FiBookmark />
+                        </div>
+                      </div>
+
+                      <div className={style.text}>
+                        Liked by Yash and 98 others{" "}
+                        <span className={style.hash}> #Nick</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>,
+
+                <Link to={"/Characters"} state={{ pass: 3 }}>
+                  <div className={style.card} id="4">
+                    <div className={style.top}>
+                      <div className={style.profile}>
+                        <CgProfile />
+                        <h3>Thor</h3>
+                      </div>
+                      <div className={style.add}>
+                        <HiDotsHorizontal />
+                      </div>
+                    </div>
+                    <img src={image8} alt="" />
+
+                    <div className={style.bottom}>
+                      <div className={style.upper}>
+                        <div className={style.like}>
+                          <div className={style.heart}>
+                            <FaHeart />
+                          </div>
+                          <TbMessageCircle2 />
+                          <FiSend />
+                        </div>
+                        <div className={style.save}>
+                          <FiBookmark />
+                        </div>
+                      </div>
+                      <div className={style.text}>
+                        Liked by Dev and 98 others{" "}
+                        <span className={style.hash}> #Thor</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>,
               ]}
             />
           </div>
@@ -221,135 +231,142 @@ const FirstPage = () => {
               delay="20"
               height={1100}
               marqueeItems={[
-                <div className={style.card}>
-                  <div className={style.top}>
-                    <div className={style.profile}>
-                      <CgProfile />
-                      <h3>Bruce</h3>
+                <Link to={"/Characters"} state={{ pass: 4 }}>
+                  <div className={style.card} id="5">
+                    <div className={style.top}>
+                      <div className={style.profile}>
+                        <CgProfile />
+                        <h3>Bruce</h3>
+                      </div>
+                      <div className={style.add}>
+                        <HiDotsHorizontal />
+                      </div>
                     </div>
-                    <div className={style.add}>
-                      <HiDotsHorizontal />
-                    </div>
-                  </div>
-                  <img src={image4} alt="" />
+                    <img src={image4} alt="" />
 
-                  <div className={style.bottom}>
-                    <div className={style.upper}>
-                      <div className={style.like}>
-                        <div className={style.heart}>
-                          <FaHeart />
+                    <div className={style.bottom}>
+                      <div className={style.upper}>
+                        <div className={style.like}>
+                          <div className={style.heart}>
+                            <FaHeart />
+                          </div>
+                          <TbMessageCircle2 />
+                          <FiSend />
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
-                      </div>
-                      <div className={style.save}>
-                        <FiBookmark />
-                      </div>
-                    </div>
-
-                    <div className={style.text}>
-                      Liked by Akansha and 55 others{" "}
-                      <span className={style.hash}> #Hulk</span>
-                    </div>
-                  </div>
-                </div>,
-                <div className={style.card}>
-                  <div className={style.top}>
-                    <div className={style.profile}>
-                      <CgProfile />
-                      <h3>Steve</h3>
-                    </div>
-                    <div className={style.add}>
-                      <HiDotsHorizontal />
-                    </div>
-                  </div>
-                  <img src={image5} alt="" />
-
-                  <div className={style.bottom}>
-                    <div className={style.upper}>
-                      <div className={style.like}>
-                        <div className={style.heart}>
-                          <FaHeart />
+                        <div className={style.save}>
+                          <FiBookmark />
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
                       </div>
-                      <div className={style.save}>
-                        <FiBookmark />
-                      </div>
-                    </div>
 
-                    <div className={style.text}>
-                      Liked by Yash and 55 others{" "}
-                      <span className={style.hash}> #Captain</span>
+                      <div className={style.text}>
+                        Liked by Akansha and 55 others{" "}
+                        <span className={style.hash}> #Hulk</span>
+                      </div>
                     </div>
                   </div>
-                </div>,
-                <div className={style.card}>
-                  <div className={style.top}>
-                    <div className={style.profile}>
-                      <CgProfile />
-                      <h3>Peter</h3>
+                </Link>,
+                <Link to={"/Characters"} state={{ pass: 5 }}>
+                  <div className={style.card} id="6">
+                    <div className={style.top}>
+                      <div className={style.profile}>
+                        <CgProfile />
+                        <h3>Steve</h3>
+                      </div>
+                      <div className={style.add}>
+                        <HiDotsHorizontal />
+                      </div>
                     </div>
-                    <div className={style.add}>
-                      <HiDotsHorizontal />
-                    </div>
-                  </div>
-                  <img src={image7} alt="" />
+                    <img src={image5} alt="" />
 
-                  <div className={style.bottom}>
-                    <div className={style.upper}>
-                      <div className={style.like}>
-                        <div className={style.heart}>
-                          <FaHeart />
+                    <div className={style.bottom}>
+                      <div className={style.upper}>
+                        <div className={style.like}>
+                          <div className={style.heart}>
+                            <FaHeart />
+                          </div>
+                          <TbMessageCircle2 />
+                          <FiSend />
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
-                      </div>
-                      <div className={style.save}>
-                        <FiBookmark />
-                      </div>
-                    </div>
-
-                    <div className={style.text}>
-                      Liked by Dev and 55 others{" "}
-                      <span className={style.hash}> #Spidey</span>
-                    </div>
-                  </div>
-                </div>,
-
-                <div className={style.card}>
-                  <div className={style.top}>
-                    <div className={style.profile}>
-                      <CgProfile />
-                      <h3>Thor</h3>
-                    </div>
-                    <div className={style.add}>
-                      <HiDotsHorizontal />
-                    </div>
-                  </div>
-                  <img src={image3} alt="" />
-
-                  <div className={style.bottom}>
-                    <div className={style.upper}>
-                      <div className={style.like}>
-                        <div className={style.heart}>
-                          <FaHeart />
+                        <div className={style.save}>
+                          <FiBookmark />
                         </div>
-                        <TbMessageCircle2 />
-                        <FiSend />
                       </div>
-                      <div className={style.save}>
-                        <FiBookmark />
-                      </div>
-                    </div>
 
-                    <div className={style.text}>
-                      Liked by Yash and 55 others{" "}
-                      <span className={style.hash}> #Thor</span>
+                      <div className={style.text}>
+                        Liked by Yash and 55 others{" "}
+                        <span className={style.hash}> #Captain</span>
+                      </div>
                     </div>
                   </div>
-                </div>,
+                </Link>,
+                <Link to={"/Characters"} state={{ pass: 6 }}>
+                  <div className={style.card} id="7">
+                    <div className={style.top}>
+                      <div className={style.profile}>
+                        <CgProfile />
+                        <h3>Peter</h3>
+                      </div>
+                      <div className={style.add}>
+                        <HiDotsHorizontal />
+                      </div>
+                    </div>
+                    <img src={image7} alt="" />
+
+                    <div className={style.bottom}>
+                      <div className={style.upper}>
+                        <div className={style.like}>
+                          <div className={style.heart}>
+                            <FaHeart />
+                          </div>
+                          <TbMessageCircle2 />
+                          <FiSend />
+                        </div>
+                        <div className={style.save}>
+                          <FiBookmark />
+                        </div>
+                      </div>
+
+                      <div className={style.text}>
+                        Liked by Dev and 55 others{" "}
+                        <span className={style.hash}> #Spidey</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>,
+                <Link to={"/Characters"} state={{ pass: 3 }}>
+                  <div className={style.card} id="4">
+                    <div className={style.top}>
+                      <div className={style.profile}>
+                        <CgProfile />
+                        <h3>Thor</h3>
+                      </div>
+                      <div className={style.add}>
+                        <HiDotsHorizontal />
+                      </div>
+                    </div>
+                    <img src={image3} alt="" />
+
+                    <div className={style.bottom}>
+                      <div className={style.upper}>
+                        <div className={style.like}>
+                          <div className={style.heart}>
+                            <FaHeart />
+                          </div>
+                          <TbMessageCircle2 />
+                          <FiSend />
+                        </div>
+                        <div className={style.save}>
+                          <FiBookmark />
+                        </div>
+                      </div>
+
+                      <div className={style.text}>
+                        Liked by Yash and 55 others{" "}
+                        <span className={style.hash}> #Thor</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>,
               ]}
             />
           </div>
