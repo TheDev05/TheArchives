@@ -9,7 +9,7 @@
 .body {
   background-color: red;
   width: 100%;
-  height: 100%;
+  height: 120%;
   position: absolute;
 
   display: flex;
@@ -19,7 +19,7 @@
 .context {
   background-color: white;
   margin-top: 5%;
-  height: 85%;
+  height: 71%;
   width: 80%;
   border-radius: 20px;
 }

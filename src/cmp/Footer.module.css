@@ -11,8 +11,7 @@
   width: 100%;
   position: relative;
   z-index: 500;
-  top: 130%;
-  top: 700px;
+  top: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
