@@ -14,7 +14,7 @@
 }
 
 .head {
-  /* background-color: transparent; */
+  background-color: transparent;
   color: black;
   width: 100%;
   height: 90px;
@@ -207,7 +207,6 @@
   left: 4px;
   width: 250px;
   height: 280px;
-
   /* filter: grayscale(); */
 }
 
