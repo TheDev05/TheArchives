@@ -9,6 +9,8 @@
   color: white;
   height: 120vh;
   width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
 .head {
