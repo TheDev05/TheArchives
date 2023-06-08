@@ -11,7 +11,7 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-}
+}  
 
 .head {
   background-color: transparent;
@@ -49,16 +49,16 @@
 }
 
 .sign {
-  width: 70%;
+  width: 50%;
   height: 50%;
-  position: relative;
-  left: 60%;
-  bottom: 18%;
-  background-color: transparent;
+  position: absolute;
+  z-index: 500;
+  left: 40%;
+  top: 70%;
+  background-color: red;
 }
 
 .social {
-  /* background-color: red; */
   color: red;
   width: 400px;
   position: absolute;

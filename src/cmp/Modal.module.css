@@ -19,7 +19,7 @@
 .context {
   background-color: white;
   margin-top: 4.6%;
-  height: 85%;
+  height: 80%;
   width: 80%;
   border-radius: 20px;
 }
@@ -65,6 +65,7 @@ a{
 img {
   width: 350px;
   height: 695px;
+  /* background-color: red; */
 }
 
 .title {
@@ -106,7 +107,7 @@ img {
   align-items: flex-end;
   position: absolute;
   left: 82.5%;
-  top: 17%;
+  top: 16%;
   width: 200px;
   height: 400px;
 }

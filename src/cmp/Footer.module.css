@@ -5,14 +5,58 @@
 }
 
 .context {
-  background-color: black;
+  background-color: rgb(10, 10, 10);
   color: white;
-  height: 150px;
+  height: 228px;
   width: 100%;
   position: relative;
   z-index: 500;
-  top: 100px;
+  top: 0px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  display: flex;
+}
+
+.left {
+  display: flex;
+  /* background-color: red; */
+  position: absolute;
+  padding: 30px;
+  left: 1.2%;
+  height: 60%;
+  width: 50%;
+  top: 30px;
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
+  /* background-color: red; */
+  position: relative;
+  padding: 30px;
+  left: -140%;
+  height: 60%;
+  width: 100%;
+  top: 7px;
+  flex-direction: column;
+}
+
+.right2 {
+  display: flex;
+  position: absolute;
+  /* background-color: red; */
+  height: 45%;
+  width: 40%;
+  left: 52%;
+  font-size: 18px;
+  text-align: justify;
+
+}
+
+a {
+  color: white;
+  font-size: 17px;
+  margin-bottom: 5px;
 }

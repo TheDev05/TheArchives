@@ -5,7 +5,7 @@
 }
 
 .body {
-  background-color: cyan;
+  background-color: rgb(255, 0, 0,0.9);
   width: 100%;
   height: 100vh;
   display: flex;
@@ -13,8 +13,9 @@
   align-items: center;
 }
 
+
 .context {
-  background-color: red;
+  /* background-color: red; */
   width: 100%;
   top: 15%;
   position: relative;
@@ -42,7 +43,7 @@
   width: 88%;
   margin-left: 6%;
   font-weight: 100;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .right h2 {
@@ -51,11 +52,11 @@
 }
 
 .card {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   width: 28.5%;
   margin-left: 10px;
   height: 45%;
-  /* margin: 10px; */ 
+  /* margin: 10px; */
   display: inline-block;
   cursor: pointer;
 
@@ -63,13 +64,116 @@
   box-shadow: 2px 4px 15px 2px black;
 }
 
-img {
+.stanimg {
   padding: 0px;
-  width: 90%;
+  width: 100%;
+  position: absolute;
+  top: -280px;
+  left: 0px;
+  height: 170%;
+  filter: opacity(0.12);
+}
+
+.text {
   position: relative;
-  top: 20px;
-  left: 20px;
-  height: 80%;
+  /* background-color: red; */
+  top: 14%;
+  left: -24%;
+  z-index: 200;
+  height: 100px;
+  width: 500px;
+  color: rgb(255, 255, 255);
+  font-size: 60px;
+  -webkit-text-stroke: 2px rgb(4, 4, 4);
+}
+
+.who {
+  font-size: 80px !important;
+  font-weight: 900;
+}
+
+.sign {
+  width: 70%;
+  height: 90%;
+  position: absolute;
+  z-index: 500;
+  left: 20%;
+  top: -40%;
+  background-color: transparent;
+}
+
+.search {
+  position: absolute;
+  top: 75%;
+  z-index: 200;
+  left: -24%;
+  width: 60%;
+  border-radius: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 10px;
+  background-color: transparent;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.box {
+  /* background-color: red; */
+  width: 135%;
+  height: 120%;
+  position: relative;
+  top: 30%;
+  left: -24%;
+}
+
+::placeholder{
+  color: white;
+}
+
+.box p {
+  position: absolute;
+  top: 30%;
+  float: right;
+  left:-7%;
+  width: 96%;
+  padding: 20px;
+  font-family: 'Times New Roman', Times, serif;
+  /* background-color: rgb(115, 128, 40); */
+  color: rgb(255, 255, 255);
+  padding: 10px;
+}
+
+/* .Profile
+{
+  position: relative;
+  top: 5%;
+  float: left;
+  filter: opacity(1);
+  height: 350px;
+  width: 250px;
+} */
+
+
+.para {
+  /* background-color: rgb(159, 188, 32); */
+  width: 145%;
+  height: 40%;
+  z-index: 200;
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+  top: 15%;
+  left: -33%;
+  color: rgb(255, 255, 255);
+  /* overflow-x: hidden; */
+  /* padding: 30px; */
+}
+
+.para p {
+  color: rgb(255, 255, 255);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 23px;
 }
 
 p img {
@@ -91,10 +195,9 @@ p img {
   right: 16%;
   height: 800px;
   left: 10px;
-
 }
 
-.footer{
+.footer {
   background-color: #fff;
   width: 100%;
   position: relative;

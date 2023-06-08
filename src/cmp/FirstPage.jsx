@@ -9,7 +9,7 @@ import image5 from "../assests/Captain.jpg";
 import image7 from "../assests/Spider.jpg";
 import image8 from "../assests/Thor2.jpg";
 import image9 from "../assests/Nick.jpg";
-import image11 from "../assests/Sign.png";
+import image11 from "../assests/Arrow3.png";
 
 import Marquee from "react-marquee-master";
 
@@ -47,7 +47,7 @@ const FirstPage = () => {
             quibusdam reprehenderit ex odit nisi perspiciatis eos ut nemo amet
             aperiam, quae repudiandae exercitationem dolorem alias ab aut
             incidunt non mollitia? Quae amet, nihil quaerat accusantium facere
-            facilis labore maxime nemo. Quidem sequi eos eligendi incidunt
+            facilis labore maxime nemo. Quidem sequi eos eligendi incidunt Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem recusandae excepturi, doloribus quod eos placeat perspiciatis et accusamus aliquid aut animi vitae! Sed, quam inventore, nostrum rerum dolore nobis impedit iusto totam illum nulla odit quas laborum placeat, sit reprehenderit itaque sunt expedita nam? Ab illum rerum odit mollitia inventore.
             possimus pariatur laborum tempore libero eaque ullam magni animi in
             officia ad molestias, dolor assumenda similique sunt, suscipit quo.
             Omnis repellat et explicabo unde nemo quasi tempore corrupti, natus,
@@ -63,9 +63,9 @@ const FirstPage = () => {
             dolor sit amet consectetur adipisicing elit. Accusamus, enim.
           </p>
 
-          <div className={style.sign}>
-            <img src={image11} alt="" />
-          </div>
+          {/* <div className={style.sign}>
+            <img className={style.sign} src={image11} alt="" />
+          </div> */}
 
           <div className={style.social}>
             <AiFillTwitterCircle className={style.twitter} />
