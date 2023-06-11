@@ -8,7 +8,7 @@ const Footer = () => {
         <p>
         This web application contains information about characters from Marvel Cinematic Universe, all the data retrived from the public domain database, Thanks for visiting!
           <br/>
-          Note : This web app is not compitable with small displays.
+          Note : This web app is not compitable with small displays (as of June 20, 2023).
           <br/>
           <br/>
         Copyright 2023 - 2024, All right reserved
