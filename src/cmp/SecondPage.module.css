@@ -5,14 +5,14 @@
 }
 
 .body {
-  background-color: rgb(255, 0, 0,0.9);
+  /* background-color: rgb(255, 0, 0,0.9); */
+  background-color: #ff0000;
   width: 100%;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 
 .context {
   /* background-color: red; */
@@ -66,30 +66,162 @@
 
 .stanimg {
   padding: 0px;
-  width: 100%;
+  width: 105.9%;
   position: absolute;
-  top: -280px;
-  left: 0px;
+  top: -344px;
+  left: -50px;
   height: 170%;
-  filter: opacity(0.12);
+  filter: opacity(0.9);
+}
+
+/*
+                <div className={style.title}>The Archeive</div>
+                <div className={style.title_detail}>Unlimited Movie, <span>TVs Shows , & More.</span></div>
+                <div className={style.title_movie}>
+                  <div className={style.pg18}>PG18</div>
+                  <div className={style.hd}>HD</div>
+                  <div className={style.genre}>Romance, Drama</div>
+                  <div className={style.time}>2022 128 min</div>
+                </div>
+*/
+
+.para > .title {
+  font-size: 80px;
+  font-weight: 900;
+  font-family: "Times New Roman", Times, serif;
+  -webkit-text-stroke: 0.5px rgb(4, 4, 4);
+  text-shadow: 1px 2px black;
+}
+
+.pg18,
+.hd {
+  position: relative;
+  left: 10px;
+  top: 30px;
+  margin-right: 10px;
+  padding: 5px;
+  height: 30px;
+}
+
+.pg18 {
+  background-color: #fff;
+  color: black;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.time {
+  position: relative;
+  left: -90px;
+  top: 0px;
+  font-weight: 800;
+}
+
+.clock {
+  position: relative;
+  top: 4px;
+  margin-left: 10px;
+}
+
+.calender {
+  position: relative;
+  top: 3px;
+}
+
+.hd {
+  border: 2px solid white;
+  width: 50px;
+  color: black;
+  text-shadow: 1px 1px black;
+}
+
+.hd > p {
+  font-weight: 900;
+  position: relative;
+  left: 4px;
+  top: -1px;
+}
+
+.genre {
+  position: relative;
+  left: -112px;
+  font-size: 20px;
+}
+
+.para > .title_movie {
+  display: flex;
+  position: relative;
+  top: 8px;
+  flex-direction: row;
+  /* font-weight: 600; */
+}
+
+.para > .title_detail {
+  font-size: 20px;
+  position: relative;
+  left: 7px;
+  top: 10px;
+  font-weight: 600;
+}
+
+.para {
+  /* background-color: rgb(159, 188, 32); */
+  width: 60%;
+  height: 40%;
+  z-index: 200;
+  position: relative;
+  font-family: "Times New Roman", Times, serif;
+  top: 100%;
+  left: -20%;
+  color: rgb(255, 255, 255);
+  /* overflow-x: hidden; */
+  /* padding: 30px; */
+}
+
+.btn_explore {
+  z-index: 10000;
+  position: relative;
+  top: 105%;
+  left: -19.05%;
+  height: 50px;
+  width: 250px;
+  background-color: rgb(255, 0, 0);
+  color: rgb(254, 254, 254);
+  cursor: pointer;
+  border: none;
+}
+
+.btn_explore:hover{
+  background-color: rgb(172, 27, 27);
 }
 
 .text {
   position: relative;
   /* background-color: red; */
-  top: 14%;
-  left: -24%;
+  top: 35%;
+  left: -20%;
   z-index: 200;
   height: 100px;
   width: 500px;
   color: rgb(255, 255, 255);
-  font-size: 60px;
-  -webkit-text-stroke: 2px rgb(4, 4, 4);
+  font-size: 20px;
+  /* transform: rotate(270deg); */
+  /* -webkit-text-stroke: 1px rgb(4, 4, 4); */
+}
+
+.text>span{
+  color: rgb(255, 0, 0);
+  font-weight: 1000;
+  font-style: italic;
+
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 26px;
+  -webkit-text-stroke: 0.6px rgb(255, 255, 255);
+
 }
 
 .who {
-  font-size: 80px !important;
-  font-weight: 900;
+  font-size: 30px;
 }
 
 .sign {
@@ -128,7 +260,7 @@ input:focus {
   left: -24%;
 }
 
-::placeholder{
+::placeholder {
   color: white;
 }
 
@@ -136,10 +268,10 @@ input:focus {
   position: absolute;
   top: 30%;
   float: right;
-  left:-7%;
+  left: -7%;
   width: 96%;
   padding: 20px;
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   /* background-color: rgb(115, 128, 40); */
   color: rgb(255, 255, 255);
   padding: 10px;
@@ -154,38 +286,6 @@ input:focus {
   height: 350px;
   width: 250px;
 } */
-
-
-.para {
-  /* background-color: rgb(159, 188, 32); */
-  width: 145%;
-  height: 40%;
-  z-index: 200;
-  position: relative;
-  font-family: "Times New Roman", Times, serif;
-  top: 15%;
-  left: -33%;
-  color: rgb(255, 255, 255);
-  /* overflow-x: hidden; */
-  /* padding: 30px; */
-}
-
-.para p {
-  color: rgb(255, 255, 255);
-  font-family: "Times New Roman", Times, serif;
-  font-size: 23px;
-}
-
-p img {
-  position: relative;
-  left: 0px;
-  width: 300px;
-  height: 400px;
-  float: left;
-  margin-right: 12px;
-  margin-bottom: 10px;
-  /* margin: -12px 25px 19px 0px; */
-}
 
 .section {
   top: 5%;

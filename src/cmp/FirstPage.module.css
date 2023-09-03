@@ -11,7 +11,8 @@
   width: 100%;
   position: relative;
   overflow: hidden;
-}  
+  z-index: 1000;
+}
 
 .head {
   background-color: transparent;
@@ -259,4 +260,38 @@
   position: relative;
   left: 79px;
   font-weight: 800;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  top: 10px;
+  position: relative;
+  /* background-color: red; */
+  width: 400px;
+  height: 150px;
+}
+
+.logo > p {
+  font-size: 40px;
+  position: relative;
+  top: 20px;
+  line-height: 22px;
+  left: 0px;
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px black;
+}
+
+.logo_lower{
+  position: relative;
+  top: 8px;
+}
+
+.logoimage {
+  background-color: burlywood;
+  height: 45px;
+  width: 45px;
+  position: relative;
+  left: 45px;
+  top: 10px;
 }
