@@ -3,6 +3,7 @@
 
 # Webpage Screenshot(s):
 ******************
+![image](https://github.com/TheDev05/TheArchives/assets/73834703/9e50572a-a366-418e-b154-bbe805736c34)
 ![image](https://github.com/TheDev05/TheArchives/assets/73834703/a35e3218-3150-4725-8043-8ece7449b267)
 ![image](https://github.com/TheDev05/TheArchives/assets/73834703/5cac6dbf-6325-46d6-9a3d-2821d035a47b)
 ![image](https://github.com/TheDev05/TheArchives/assets/73834703/1142dff7-f025-4a9c-bfe0-62f210022ff2)
