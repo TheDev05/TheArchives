@@ -7,7 +7,7 @@
 .context {
   background-color: rgb(10, 10, 10);
   color: white;
-  height: 228px;
+  height: 380px;
   width: 100%;
   position: relative;
   z-index: 500;
@@ -27,7 +27,7 @@
   left: 1.2%;
   height: 60%;
   width: 50%;
-  top: 30px;
+  top: 70px;
   flex-direction: column;
 }
 

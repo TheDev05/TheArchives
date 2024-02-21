@@ -7,10 +7,10 @@
 }
 
 .marvel_logo {
-  width: 40%;
+  width: 60%;
   height: 20%;
   position: relative;
-  left: 30%;
+  left: 20%;
   top: 10%;
 }
 
@@ -44,24 +44,26 @@ input {
 }
 
 .movies_list {
-  top: 37%;
+  top: 40%;
   width: 95%;
   left: 55px;
-  background-color: rgb(255, 4, 4);
+  background-color: rgb(255, 0, 0);
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
   position: absolute;
 }
+.search_card {
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+}
 
 .search_card > button {
-  padding: 1.7%;
   position: relative;
-  top: 5%;
-  width: 80px;
-  left: 88.5%;
-  cursor: pointer;
-  border: none;
-  font-weight: 600;
-  border-radius: 0px 100px 100px 0px;
+  top: 17%;
+  height: 40px;
+  width: 50%;
+  left: 25%;
 }

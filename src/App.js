@@ -6,6 +6,7 @@ import FirstPage from "../src/cmp/FirstPage";
 import Footer from "../src/cmp/Footer";
 import "animate.css";
 import { Routes, Route, Link } from "react-router-dom";
+import SandBox from "./cmp/SandBox"
 
 function App() {
   return (

@@ -7,26 +7,27 @@
 .body {
   /* background-color: rgb(255, 0, 0,0.9); */
   background-color: #ff0000;
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   display: flex;
+  position: relative;
+  flex-direction: row;
+  top: 65px;
   justify-content: center;
   align-items: center;
 }
 
 .context {
-  /* background-color: red; */
   width: 100%;
-  top: 15%;
+  top: 35%;
   position: relative;
-  height: 130%;
+  height: 100%;
   z-index: 100;
   display: flex;
   flex-direction: row;
 }
 
 .right {
-  /* background-color: green; */
   height: 50%;
   top: 8%;
   width: 100%;
@@ -36,7 +37,6 @@
 
 .right p {
   position: relative;
-  /* bottom: 22%; */
   color: white;
   margin-bottom: 20px;
   text-align: justify;
@@ -56,7 +56,6 @@
   width: 28.5%;
   margin-left: 10px;
   height: 45%;
-  /* margin: 10px; */
   display: inline-block;
   cursor: pointer;
 
@@ -66,24 +65,14 @@
 
 .stanimg {
   padding: 0px;
-  width: 105.9%;
-  position: absolute;
-  top: -344px;
-  left: -50px;
+  right: 10%;
+  width: 113%;
+  position: relative;
+  top: -82%;
+  /* left: -50px; */
   height: 170%;
   filter: opacity(0.9);
 }
-
-/*
-                <div className={style.title}>The Archeive</div>
-                <div className={style.title_detail}>Unlimited Movie, <span>TVs Shows , & More.</span></div>
-                <div className={style.title_movie}>
-                  <div className={style.pg18}>PG18</div>
-                  <div className={style.hd}>HD</div>
-                  <div className={style.genre}>Romance, Drama</div>
-                  <div className={style.time}>2022 128 min</div>
-                </div>
-*/
 
 .para > .title {
   font-size: 80px;
@@ -153,7 +142,6 @@
   position: relative;
   top: 8px;
   flex-direction: row;
-  /* font-weight: 600; */
 }
 
 .para > .title_detail {
@@ -165,59 +153,50 @@
 }
 
 .para {
-  /* background-color: rgb(159, 188, 32); */
   width: 60%;
   height: 40%;
   z-index: 200;
   position: relative;
   font-family: "Times New Roman", Times, serif;
-  top: 100%;
+  top: 10%;
   left: -20%;
   color: rgb(255, 255, 255);
-  /* overflow-x: hidden; */
-  /* padding: 30px; */
 }
 
 .btn_explore {
   z-index: 10000;
   position: relative;
-  top: 105%;
+  /* top: 105%; */
+  top: 80%;
   left: -19.05%;
-  height: 50px;
-  width: 250px;
-  background-color: rgb(255, 0, 0);
+  height: 10%;
+  width: 30vw;
+  background-color: rgb(11, 11, 11);
   color: rgb(254, 254, 254);
   cursor: pointer;
   border: none;
 }
 
-.btn_explore:hover{
+.btn_explore:hover {
   background-color: rgb(172, 27, 27);
 }
 
 .text {
   position: relative;
-  /* background-color: red; */
-  top: 35%;
-  left: -20%;
+  left: 0%;
   z-index: 200;
-  height: 100px;
-  width: 500px;
   color: rgb(255, 255, 255);
   font-size: 20px;
-  /* transform: rotate(270deg); */
-  /* -webkit-text-stroke: 1px rgb(4, 4, 4); */
 }
 
-.text>span{
+.text > span {
   color: rgb(255, 0, 0);
   font-weight: 1000;
   font-style: italic;
 
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   font-size: 26px;
   -webkit-text-stroke: 0.6px rgb(255, 255, 255);
-
 }
 
 .who {
@@ -252,7 +231,6 @@ input:focus {
 }
 
 .box {
-  /* background-color: red; */
   width: 135%;
   height: 120%;
   position: relative;
@@ -272,20 +250,9 @@ input:focus {
   width: 96%;
   padding: 20px;
   font-family: "Times New Roman", Times, serif;
-  /* background-color: rgb(115, 128, 40); */
   color: rgb(255, 255, 255);
   padding: 10px;
 }
-
-/* .Profile
-{
-  position: relative;
-  top: 5%;
-  float: left;
-  filter: opacity(1);
-  height: 350px;
-  width: 250px;
-} */
 
 .section {
   top: 5%;
@@ -298,10 +265,45 @@ input:focus {
 }
 
 .footer {
-  background-color: #fff;
+  background-color: #ffffff;
   width: 100%;
   position: relative;
   bottom: 10px;
   z-index: 500;
   height: 100px;
+}
+
+@media screen and (max-width: 350px) {
+  .title_detail,
+  .title_movie,
+  .clock,
+  .calender,
+  .time,
+  .genre,
+  .hd,
+  .pg18 {
+    display: none;
+  }
+
+  .para .title{
+    font-size: 60px;
+  }
+
+  .btn_explore {
+    top: 50%;
+  }
+}
+
+@media screen and (max-width: 250px) {
+  .btn_explore{
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .calender,
+  .time,
+  .genre {
+    display: none;
+  }
 }

@@ -50,7 +50,7 @@ const SecondPage = () => {
               </Link>
 
               <div className={style.box}>
-                <img className={style.stanimg} src={Stan} alt="" />
+                {/* <img className={style.stanimg} src={  Stan} alt="" /> */}
                 {/* <img className={style.Profile} src={Profile} alt="" /> */}
                 <p>
                   {/* Lorem ipsum dolor sit amet consectetur adipisicing elit.

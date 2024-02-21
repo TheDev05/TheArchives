@@ -4,47 +4,97 @@
   box-sizing: border-box;
 }
 
-.context {
+.outerBody {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+}
+
+.context1 {
   background-color: white;
   color: white;
-  height: 120vh;
-  width: 100%;
+  height: 114vh;
+  width: 100vw;
   position: relative;
   overflow: hidden;
-  z-index: 1000;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
 }
 
 .head {
   background-color: transparent;
+  /* background-color: aqua; */
   color: black;
-  width: 100%;
+  width: 100vw;
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
   height: 90px;
-  position: absolute;
+  position: relative;
   z-index: 0;
 }
 
-.head p {
-  font-size: 50px;
-  text-transform: uppercase;
-  font-family: "Times New Roman", Times, serif;
+.logo {
+  display: flex;
+  flex-direction: row;
+  top: 10px;
+  position: relative;
+  /* background-color: red; */
+  width: 100%;
+  height: 150px;
+  left: 3.5%;
+}
+
+.logo > p {
+  font-size: 45px;
+  position: relative;
+  top: 20px;
   font-weight: 600;
-  line-height: 90px;
-  margin-left: 50px;
-  /* -webkit-text-stroke: 1px white; */
-  color: black;
+  line-height: 22px;
+  left: 0px;
+  color: rgb(255, 0, 0);
+  text-shadow: 1px 1px black;
+}
+
+.logo_lower {
+  position: relative;
+  top: 15px;
+}
+
+.logoimage {
+  background-color: burlywood;
+  height: 45px;
+  width: 45px;
+  position: relative;
+  left: 45px;
+  top: 10px;
+}
+
+.left {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  width: 57%;
+  top: 40%;
+  /* background-color: blue; */
 }
 
 .part {
-  top: 100px;
+  /* top: 1px; */
   position: absolute;
-  /* background-color: black; */
+  /* background-color: red; */
   color: black;
-  width: 950px;
-  height: 700px;
+  width: 100%;
+  /* height: 100%; */
 }
 
 .part p {
-  font-size: 20px;
+  position: relative;
+  top: 50px;
+  font-size: 1.3vw;
   text-align: justify;
   padding: 50px;
 }
@@ -56,12 +106,13 @@
   z-index: 500;
   left: 40%;
   top: 70%;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .social {
   color: red;
-  width: 400px;
+  width: 100%;
+  /* background-color: rgb(103, 205, 24); */
   position: absolute;
   height: 200px;
   z-index: 101;
@@ -69,8 +120,8 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  top: 68%;
-  left: -8.4%;
+  /* top: 68%; */
+  left: 0px;
 }
 
 .fb,
@@ -128,13 +179,27 @@
   color: black;
   /* background-color: black; */
   width: 50%;
-  height: 100%;
+  height: 110%;
   top: -120px;
   position: absolute;
   right: -15%;
   padding: 20px;
   transform: skew(8deg);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   /* filter: blur(1px); */
+}
+
+.newCard {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* background-color: pink; */
 }
 
 ::-webkit-scrollbar {
@@ -146,7 +211,7 @@
   width: 37%;
   position: absolute;
   right: 60%;
-  height: 100vh;
+  height: 100%;
 }
 
 .col2 {
@@ -154,7 +219,7 @@
   width: 37%;
   position: absolute;
   right: 22%;
-  height: 100vh;
+  height: 100%;
 }
 
 .card {
@@ -257,41 +322,100 @@
 }
 
 .hash {
-  position: relative;
-  left: 79px;
+  position: absolute;
+  right: 8px;
   font-weight: 800;
 }
 
-.logo {
-  display: flex;
-  flex-direction: row;
-  top: 10px;
-  position: relative;
-  /* background-color: red; */
-  width: 400px;
-  height: 150px;
+@media screen and (max-width: 1140px) {
+  .left {
+    top: 45%;
+  }
 }
 
-.logo > p {
-  font-size: 40px;
-  position: relative;
-  top: 20px;
-  line-height: 22px;
-  left: 0px;
-  color: rgb(255, 0, 0);
-  text-shadow: 1px 1px black;
+@media screen and (max-width: 1520px) {
+  .right {
+    transform: skew(0deg);
+    width: 60%;
+  }
+  .newCard {
+    display: flex;
+  }
+
+  .col1,
+  .col2 {
+    display: none;
+  }
 }
 
-.logo_lower{
-  position: relative;
-  top: 8px;
+.secondPageContext {
+  display: none;
 }
 
-.logoimage {
-  background-color: burlywood;
-  height: 45px;
-  width: 45px;
-  position: relative;
-  left: 45px;
-  top: 10px;
+@media screen and (max-width: 900px) {
+  .right {
+    display: none;
+    /* background-color: red; */
+  }
+
+  .left {
+    position: absolute;
+    display: flex;
+    /* background-color: red; */
+    /* justify-content: center; */
+    width: 100%;
+  }
+
+  .part {
+    /* background-color: aqua; */
+    position: relative;
+    /* height: 50%; */
+    padding: 1vw;
+  }
+
+  .card {
+    left: 25%;
+  }
+
+  .context {
+    height: 100vh;
+  }
+
+  .left {
+    top: 5%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .logo p {
+    font-size: 5vw;
+  }
+
+  .logo_lower {
+    top: 0.8vh;
+  }
+
+  .part p .extra {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .secondPageContext {
+    right: 0px;
+    display: flex;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .secondPageContext {
+    top: -150px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .secondPageContext {
+    top: 10px;
+  }
 }

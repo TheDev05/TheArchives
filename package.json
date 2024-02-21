@@ -8,6 +8,10 @@
   "dependencies": {
     "@coreui/coreui": "^4.2.2",
     "@coreui/react": "^4.4.0",
+    "@emotion/react": "^11.11.3",
+    "@emotion/styled": "^11.11.0",
+    "@mui/icons-material": "^5.15.10",
+    "@mui/material": "^5.15.10",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -19,6 +23,7 @@
     "react-fast-marquee": "^1.3.5",
     "react-icons": "^4.4.0",
     "react-marquee-master": "^1.4.5",
+    "react-material-ui-carousel": "^3.4.2",
     "react-router-dom": "^6.4.1",
     "react-scripts": "5.0.1",
     "swiper": "^8.4.2",
@@ -49,4 +54,3 @@
     ]
   }
 }
-

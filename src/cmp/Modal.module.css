@@ -8,11 +8,12 @@
 
 .body {
   background-color: red;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   position: absolute;
   display: flex;
   justify-content: center;
+  align-items: center;
   overflow-y: hidden;
 }
 
@@ -21,21 +22,34 @@
   margin-top: 4.6%;
   height: 80%;
   width: 80%;
+  display: flex;
+  flex-direction: column;
   border-radius: 20px;
+  overflow: scroll;
 }
 
 .head {
-  background-color: white;
+  /* background-color: rgb(185, 94, 94); */
   border-radius: 20px;
   color: black;
   height: 80px;
   width: 100%;
   display: flex;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
 }
 
-a{
+.below {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background-color: pink; */
+  display: flex;
+  flex-direction: row;
+}
+
+a {
   text-decoration: none;
 }
 
@@ -48,24 +62,44 @@ a{
   font-weight: 600;
 }
 
+.menuToggle {
+  display: none;
+}
+
+.burgerMenu {
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  /* background-color: pink; */
+}
+
 .leftBox {
+  position: relative;
+  left: 10px;
+  height: 100%;
+  width: 40%;
   /* background-color: aqua; */
-  padding: 40px;
+  padding: 20px;
 }
 
 .image {
-  /* background-color: black; */
-  position: fixed;
+  /* background-color: rgb(107, 214, 61); */
+  position: relative;
   /* top: -80px; */
   /* left: 48%; */
-  /* width: 460px; */
-  /* height: 880px; */
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  /* align-items: center; */
 }
 
-img {
-  width: 350px;
-  height: 695px;
-  /* background-color: red; */
+.photu {
+  display: flex;
+  position: relative;
+  width: 25vw;
+  height: 75vh;
+  /* background-color: rgb(231, 11, 172); */
 }
 
 .title {
@@ -86,9 +120,9 @@ img {
 .detail {
   /* background-color: red; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 19px;
+  font-size: 1.3vw;
   margin: 20px 0px 20px 20px;
-  width: 40%;
+  /* width: 40%; */
   padding: 10px;
 }
 
@@ -99,17 +133,18 @@ img {
 }
 
 .right {
-  /* background-color: black; */
+  /* background-color: rgb(216, 203, 17); */
   color: black;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  position: absolute;
-  left: 82.5%;
-  top: 16%;
-  width: 200px;
-  height: 400px;
+  position: relative;
+  /* left: 82.5%; */
+  right: 0%;
+  /* right: -30px; */
+  width: 20%;
+  height: 100%;
 }
 
 .link {
@@ -127,4 +162,40 @@ img {
 
 .head a {
   color: black;
+}
+
+@media screen and (max-width: 1050px) {
+  .leftBox {
+    width: 80%;
+  }
+
+  .right {
+    display: none;
+  }
+
+  .menuToggle {
+    display: flex;
+  }
+
+  .image {
+    width: 100%;
+  }
+
+  .photu {
+    width: 45vw;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .image {
+    display: none;
+  }
+
+  .leftBox {
+    width: 100%;
+  }
+
+  .leftBox .title h2 {
+    font-size: 30px;
+  }
 }

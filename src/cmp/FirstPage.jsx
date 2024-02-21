@@ -28,59 +28,68 @@ import SecondPage from "../cmp/SecondPage";
 import { Link } from "react-router-dom";
 import { useState } from "react";
 
+import SandBox from "./SandBox";
+
 const FirstPage = () => {
   return (
-    <>
-      <div className={style.context}>
+    <div className={style.outerBody}>
+      <div className={style.context1}>
         <div className={style.head}>
           <div className={style.logo}>
             {/* <img className={style.logoimage} src={image12} alt="" /> */}
-            <p>THE<br/> <span className={style.logo_lower}>ARCHIVES</span></p>
+            <p>
+              THE
+              <br /> <span className={style.logo_lower}>ARCHIVES</span>
+            </p>
           </div>
         </div>
 
-        <div className={style.part}>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, cum,
-            aspernatur et illum iusto eius repellendus quidem laboriosam ducimus
-            quibusdam quisquam, ullam quasi cumque architecto excepturi. Modi
-            recusandae adipisci repellat. Lorem ipsum dolor, sit amet
-            consectetur adipisicing elit. Fuga architecto rem reiciendis animi
-            repellendus odio, aliquam nisi voluptate veritatis eaque eveniet
-            dolorem cumque nemo consequatur quam autem! Nihil fuga obcaecati
-            quibusdam reprehenderit ex odit nisi perspiciatis eos ut nemo amet
-            aperiam, quae repudiandae exercitationem dolorem alias ab aut
-            incidunt non mollitia? Quae amet, nihil quaerat accusantium facere
-            facilis labore maxime nemo. Quidem sequi eos eligendi incidunt Lorem
-            ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
-            recusandae excepturi, doloribus quod eos placeat perspiciatis et
-            accusamus aliquid aut animi vitae! Sed, quam inventore, nostrum
-            rerum dolore nobis impedit iusto totam illum nulla odit quas laborum
-            placeat, sit reprehenderit itaque sunt expedita nam? Ab illum rerum
-            odit mollitia inventore. possimus pariatur laborum tempore libero
-            eaque ullam magni animi in officia ad molestias, dolor assumenda
-            similique sunt, suscipit quo. Omnis repellat et explicabo unde nemo
-            quasi tempore corrupti, natus, nisi eos mollitia asperiores ut sunt
-            ex molestiae, amet at itaque numquam inventore exercitationem.
-            Laudantium commodi deleniti doloremque, alias culpa, nemo nulla
-            minus exercitationem quidem error laborum earum cumque obcaecati
-            pore ad. Quia dolorum sed excepturi, numquam id cum harum fugiat
-            adipisci dolor vel provident magni deleniti minus distinctio est
-            aspernatur cupiditate illum! Ut non natus qui! Similique, fugit id
-            alias veniam non voluptatibus, Lorem ipsum dolor sit amet
-            consectetur, adipisicing elit. reiciendis dolorem magnam officia
-            Lorem. Dolores soluta quae error. Lorem ipsum dolor sit amet
-            consectetur adipisicing elit. Accusamus, enim.
-          </p>
+        <div className={style.left}>
+          <div className={style.part}>
+            <div className={style.details}>
+              <p>
+                Welcome, Marvel Fanatics! Have you ever felt like the Infinity
+                Saga was just the beginning, and the Multiverse Saga feels like
+                a whole new universe to explore? Do character names like Kamala
+                Khan, Yelena Belova, and Shang-Chi leave you scratching your
+                head? Fear not, for you've stumbled upon the ultimate gateway to
+                the ever-expanding Marvel Cinematic Universe: The Archives!
+                <span className={style.extra}>
+                  Think of us as your personal Avengers Quinjet, soaring you
+                  through the vast realms of Marvel movies and TV shows. Search
+                  for your favorite heroes, from the iconic Iron Man to the
+                  enigmatic Moon Knight. Explore timelines, delve into hidden
+                  connections, and rediscover forgotten gems. With The
+                  Archives!, the secrets of the MCU are at your fingertips! But
+                  wait, there's more! We're not just a search engine for
+                  superpowered beings. Here's what awaits you within our digital
+                  walls: Curated Collections: Feeling nostalgic for the Phase 1
+                  classics? Or maybe you're curious about the cosmic side of
+                  things. Dive into our themed collections, where we handpick
+                  movies and shows based on characters, genres, storylines, and
+                  even historical periods within the MCU. Beyond the Big Screen:
+                  The MCU extends far beyond the silver screen. We keep you
+                  updated on the latest Disney+ series, upcoming movie releases,
+                  and even tie-in comics and video games. No detail escapes our
+                  watchful eye! Unleash Your Inner Superfan level. So, dear
+                  Marvel fan, don't get lost in the Quantum Realm of information
+                  overload. Join us at The Archives! and embark on a journey
+                  through the ever-evolving Marvel Cinematic Universe! Remember,
+                  with great knowledge comes great responsibility... the
+                  responsibility to share your love for the MCU with the world!
+                  Start your adventure today!
+                </span>
+                <div className={style.social}>
+                  <AiFillTwitterCircle className={style.twitter} />
+                  <BsGithub className={style.git} />
+                  <BsFacebook className={style.fb} />
+                </div>
+              </p>
+            </div>
 
-          {/* <div className={style.sign}>
+            {/* <div className={style.sign}>
             <img className={style.sign} src={image11} alt="" />
           </div> */}
-
-          <div className={style.social}>
-            <AiFillTwitterCircle className={style.twitter} />
-            <BsGithub className={style.git} />
-            <BsFacebook className={style.fb} />
           </div>
         </div>
         {/* <div className={style.number}>
@@ -89,8 +98,12 @@ const FirstPage = () => {
         </div> */}
 
         <div className={style.right}>
+          <div className={style.newCard}>
+            <SandBox />
+          </div>
           <div className={style.col1}>
             <Marquee
+              className={style.marquee}
               direction="up"
               delay="12"
               height={1100}
@@ -382,8 +395,11 @@ const FirstPage = () => {
           </div>
         </div>
       </div>
-      <SecondPage />
-    </>
+      <div className={style.secondPageContext}>
+        <SandBox />
+      </div>
+      <SecondPage/>
+    </div>
   );
 };
 
