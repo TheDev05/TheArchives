@@ -1,7 +1,7 @@
 # TheArchives
 ******************
 
-# Webpage Screenshot(s):
+# Webpage Screenshots:
 ******************
 ![image](https://github.com/TheDev05/TheArchives/assets/73834703/9e50572a-a366-418e-b154-bbe805736c34)
 ![image](https://github.com/TheDev05/TheArchives/assets/73834703/a35e3218-3150-4725-8043-8ece7449b267)
